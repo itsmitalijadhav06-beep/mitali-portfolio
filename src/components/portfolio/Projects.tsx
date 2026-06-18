@@ -1,55 +1,76 @@
 import { useState } from "react";
 import { Section } from "./Section";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Sparkles } from "lucide-react";
 
 type Project = {
   title: string;
   description: string;
+  features?: string[];
   tech: string[];
   category: "AI/ML" | "Web" | "Systems";
   accent: string;
+  github: string;
+  demo?: string;
+  status?: string;
+  featured?: boolean;
 };
 
 const projects: Project[] = [
   {
     title: "PestGuard AI",
     description:
-      "AI-powered rice pest detection using deep learning. Detects pests from images with risk analysis, monitoring dashboards, and recommendations for farmers.",
-    tech: ["TensorFlow", "FastAPI", "React", "MongoDB", "TypeScript"],
+      "An AI-powered rice pest detection and monitoring platform that uses deep learning to identify pests from crop images, assess risk levels, provide recommendations, and visualize analytics through interactive dashboards.",
+    features: [
+      "Rice pest image classification",
+      "Risk assessment (Low / Medium / High)",
+      "Real-time monitoring dashboard",
+      "Analytics and trend visualization",
+      "Image upload and prediction",
+      "Farmer-friendly recommendations",
+    ],
+    tech: ["TensorFlow", "FastAPI", "React", "TypeScript", "MongoDB", "Tailwind CSS"],
     category: "AI/ML",
     accent: "from-emerald-400/30 to-brand-cyan/30",
+    github: "https://github.com/itsmitalijadhav06-beep/pest-detection",
+    demo: "https://pest-detection-liard.vercel.app/",
+    status: "Deployed",
+    featured: true,
   },
   {
-    title: "MindEase",
+    title: "Smart Energy Monitoring System",
     description:
-      "Stress management web app that evaluates stress through assessments and provides personalized recommendations and wellness activities.",
-    tech: ["Java", "JDBC", "SQL", "HTML", "CSS"],
-    category: "Web",
-    accent: "from-brand-purple/30 to-pink-400/30",
-  },
-  {
-    title: "EcoBright",
-    description:
-      "Smart e-waste management platform promoting responsible recycling and helping users locate disposal centers.",
-    tech: ["React", "Node.js", "MongoDB"],
-    category: "Web",
-    accent: "from-brand-blue/30 to-emerald-400/30",
-  },
-  {
-    title: "EnerVision",
-    description:
-      "Smart energy monitoring system that tracks power consumption and provides insights to optimize energy usage.",
+      "System for monitoring and analyzing energy consumption to improve efficiency and reduce wastage across homes and facilities.",
     tech: ["Java", "Data Structures"],
     category: "Systems",
     accent: "from-amber-400/30 to-brand-purple/30",
+    github: "https://github.com/itsmitalijadhav06-beep/Smart-Energy-Monitoring-System",
   },
   {
-    title: "AgriMove",
+    title: "Farmer Transport System",
     description:
-      "Farmer transport management system designed to streamline agricultural logistics and transportation services.",
+      "Agricultural logistics platform connecting farmers with transportation resources for efficient crop movement and supply-chain coordination.",
     tech: ["Python"],
     category: "Systems",
     accent: "from-brand-cyan/30 to-brand-blue/30",
+    github: "https://github.com/itsmitalijadhav06-beep/Farmer-Transport-System",
+  },
+  {
+    title: "MindEase — Stress Management",
+    description:
+      "Stress assessment and wellness platform that provides personalized recommendations, journaling, and stress-relief activities for students.",
+    tech: ["Java", "JDBC", "SQL", "HTML", "CSS"],
+    category: "Web",
+    accent: "from-brand-purple/30 to-pink-400/30",
+    github: "https://github.com/itsmitalijadhav06-beep/StressManagement",
+  },
+  {
+    title: "EcoBright — E-Waste Management",
+    description:
+      "Smart e-waste management platform promoting responsible recycling and helping users locate nearby disposal facilities.",
+    tech: ["React", "Node.js", "MongoDB"],
+    category: "Web",
+    accent: "from-brand-blue/30 to-emerald-400/30",
+    github: "https://github.com/itsmitalijadhav06-beep/E-WasteManagement",
   },
 ];
 
@@ -90,19 +111,44 @@ export function Projects() {
         {visible.map((p) => (
           <article
             key={p.title}
-            className="group relative overflow-hidden rounded-3xl glass-strong p-6 hover-lift"
+            className={`group relative overflow-hidden rounded-3xl glass-strong p-6 hover-lift ${
+              p.featured ? "md:col-span-2" : ""
+            }`}
           >
             <div
               className={`absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br ${p.accent} blur-3xl opacity-60 transition-opacity group-hover:opacity-100`}
             />
             <div className="relative">
               <div className="flex items-start justify-between gap-3">
-                <h3 className="font-display text-xl font-bold sm:text-2xl">{p.title}</h3>
-                <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-wider text-brand-cyan">
-                  {p.category}
-                </span>
+                <div className="flex items-center gap-2">
+                  {p.featured && <Sparkles size={16} className="text-brand-cyan" />}
+                  <h3 className="font-display text-xl font-bold sm:text-2xl">{p.title}</h3>
+                </div>
+                <div className="flex flex-col items-end gap-1">
+                  <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-wider text-brand-cyan">
+                    {p.category}
+                  </span>
+                  {p.status && (
+                    <span className="inline-flex items-center gap-1 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-2 py-0.5 text-[10px] text-emerald-300">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      {p.status}
+                    </span>
+                  )}
+                </div>
               </div>
               <p className="mt-3 text-sm text-muted-foreground sm:text-base">{p.description}</p>
+
+              {p.features && (
+                <ul className="mt-4 grid gap-1.5 sm:grid-cols-2">
+                  {p.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-xs text-foreground/80 sm:text-sm">
+                      <span className="mt-1.5 h-1 w-1 flex-none rounded-full bg-brand-cyan" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {p.tech.map((t) => (
                   <span
@@ -113,23 +159,25 @@ export function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="mt-5 flex gap-2">
+              <div className="mt-5 flex flex-wrap gap-2">
                 <a
-                  href="https://github.com/mitalijadhav"
+                  href={p.github}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg glass px-3 py-2 text-xs font-medium hover:text-brand-cyan"
                 >
                   <Github size={14} /> Code
                 </a>
-                <a
-                  href="https://github.com/mitalijadhav"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-brand-blue to-brand-purple px-3 py-2 text-xs font-medium text-background"
-                >
-                  <ExternalLink size={14} /> Live
-                </a>
+                {p.demo && (
+                  <a
+                    href={p.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-brand-blue to-brand-purple px-3 py-2 text-xs font-medium text-background"
+                  >
+                    <ExternalLink size={14} /> Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </article>
