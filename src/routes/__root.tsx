@@ -77,19 +77,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mitali Jadhav — AI/ML Engineer & Full-Stack Developer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Mitali Jadhav — Computer Science Engineering student building AI, ML and full-stack products with social impact.",
+      },
+      { name: "author", content: "Mitali Jadhav" },
+      { property: "og:title", content: "Mitali Jadhav — AI/ML Engineer & Full-Stack Developer" },
+      {
+        property: "og:description",
+        content: "AI, Machine Learning and Full-Stack projects by Mitali Jadhav.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Mitali Jadhav — AI/ML Engineer & Full-Stack Developer" },
+      {
+        name: "twitter:description",
+        content: "Building intelligent solutions with AI, ML and modern web.",
+      },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
       },
     ],
   }),

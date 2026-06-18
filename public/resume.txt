@@ -1,0 +1,30 @@
+MITALI JADHAV
+Computer Science Engineering Student | AI/ML Enthusiast | Full-Stack Developer
+
+EDUCATION
+B.Tech, Computer Science Engineering — Expected 2028 — CGPA: 8.3
+
+SKILLS
+Languages: Java, Python, C++, SQL, JavaScript, TypeScript
+Web: React, FastAPI, Node.js, Express.js, HTML, CSS, Tailwind CSS
+Database: MongoDB, MySQL
+AI/ML: TensorFlow, Deep Learning, Computer Vision, Data Analysis, Machine Learning
+Tools: Git, GitHub, VS Code, Postman, Render, Vercel
+
+PROJECTS
+- PestGuard AI — AI rice pest detection (TensorFlow, FastAPI, React, MongoDB, TypeScript)
+- MindEase — Stress management web app (Java, JDBC, SQL, HTML, CSS)
+- EcoBright — Smart e-waste management (React, Node.js, MongoDB)
+- EnerVision — Smart energy monitoring (Java, DSA)
+- AgriMove — Farmer transport management (Python)
+
+ACHIEVEMENTS
+- Top 30 Winner — Innovation Marathon 2.0
+- Open Source Contributor — GSSoC'26
+- Technical Team Member — AWS Student Builder Program
+- Participant — SIH and multiple National Hackathons
+
+CONTACT
+Email: mitalijadhav@example.com
+GitHub: github.com/mitalijadhav
+LinkedIn: linkedin.com/in/mitalijadhav
