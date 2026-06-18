@@ -3,7 +3,7 @@ import { Award, Code2, Github, Rocket } from "lucide-react";
 
 const stats = [
   { icon: Code2, label: "Projects Built", value: 5, suffix: "+" },
-  { icon: Github, label: "Open Source", value: 20, suffix: "+" },
+  { icon: Github, label: "Open Source", value: 10, suffix: "+" },
   { icon: Award, label: "Hackathons", value: 8, suffix: "+" },
   { icon: Rocket, label: "CGPA", value: 8.3, suffix: "" },
 ];

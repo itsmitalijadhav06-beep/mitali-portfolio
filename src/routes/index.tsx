@@ -14,22 +14,27 @@ import { Loader } from "@/components/portfolio/Loader";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    meta: [
-      { title: "Mitali Jadhav — AI/ML Engineer & Full-Stack Developer" },
-      {
-        name: "description",
-        content:
-          "Mitali Jadhav — CSE student building AI, ML and full-stack products. Explore projects, skills, achievements and get in touch.",
-      },
-      { property: "og:title", content: "Mitali Jadhav — Portfolio" },
-      {
-        property: "og:description",
-        content: "AI/ML Enthusiast & Full-Stack Developer. View projects, skills and contact.",
-      },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
+  meta: [
+    { title: "Mitali Jadhav | AI/ML Engineer • Full-Stack Developer" },
+    {
+      name: "description",
+      content:
+        "Mitali Jadhav — CSE student building AI, ML and full-stack products. Explore projects, skills, achievements and get in touch.",
+    },
+    { property: "og:title", content: "Mitali Jadhav | AI/ML Engineer • Full-Stack Developer" },
+    {
+      property: "og:description",
+      content: "AI/ML Enthusiast & Full-Stack Developer. View projects, skills and contact.",
+    },
+    { property: "og:url", content: "/" },
+  ],
+  links: [
+    { rel: "canonical", href: "/" },
+
+    // ADD THIS
+    { rel: "icon", href: "/mj-logo.png", type: "image/png" },
+  ],
+}),
   component: Index,
 });
 

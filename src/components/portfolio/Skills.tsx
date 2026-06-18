@@ -1,37 +1,78 @@
 import { Section } from "./Section";
-import { Code2, Database, Globe, Wrench, Brain } from "lucide-react";
+import { Code2, Database, Globe, Wrench, Brain, Cloud } from "lucide-react";
 
 const groups = [
   {
     icon: Code2,
     title: "Languages",
-    items: ["Java", "Python", "C++", "SQL", "JavaScript", "TypeScript"],
+    items: [
+      "Java",
+      "Python",
+      "C++",
+      "SQL",
+      "JavaScript",
+      "TypeScript",
+    ],
   },
   {
     icon: Globe,
     title: "Web Development",
-    items: ["React", "FastAPI", "Node.js", "Express.js", "HTML", "CSS", "Tailwind CSS"],
+    items: [
+      "React",
+      "FastAPI",
+      "Node.js",
+      "Express.js",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "REST APIs",
+      "JWT Authentication",
+    ],
   },
   {
     icon: Database,
     title: "Database",
-    items: ["MongoDB", "MySQL"],
+    items: [
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "JDBC",
+    ],
   },
   {
     icon: Brain,
     title: "AI / ML",
     items: [
       "TensorFlow",
+      "Machine Learning",
       "Deep Learning",
       "Computer Vision",
-      "Data Analysis",
-      "Machine Learning",
+      "Transfer Learning",
+      "CNNs",
+      "Image Classification",
+    ],
+  },
+  {
+    icon: Cloud,
+    title: "Cloud & Deployment",
+    items: [
+      "Vercel",
+      "Render",
+      "Hugging Face",
+      "GitHub",
     ],
   },
   {
     icon: Wrench,
     title: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Postman", "Render", "Vercel"],
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+      "Jupyter Notebook",
+      "Maven",
+    ],
   },
 ];
 

@@ -51,20 +51,20 @@ export function Contact() {
           <ContactCard
             icon={Mail}
             label="Email"
-            value="mitalijadhav@example.com"
-            href="mailto:mitalijadhav@example.com"
+            value="its.mitalijadhav06@gmail.com"
+            href="mailto:its.mitalijadhav06@gmail.com"
           />
           <ContactCard
             icon={Linkedin}
             label="LinkedIn"
             value="linkedin.com/in/mitalijadhav"
-            href="https://linkedin.com/in/mitalijadhav"
+            href="https://www.linkedin.com/in/mitali-jadhav-04549a331"
           />
           <ContactCard
             icon={Github}
             label="GitHub"
             value="github.com/mitalijadhav"
-            href="https://github.com/mitalijadhav"
+            href="https://github.com/itsmitalijadhav06-beep"
           />
         </div>
 

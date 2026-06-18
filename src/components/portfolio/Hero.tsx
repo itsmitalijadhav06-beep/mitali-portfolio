@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Download, FolderGit2, Mail, Github, Linkedin, Sparkles } from "lucide-react";
-import portrait from "@/assets/mitali-portrait.jpg";
+import portrait from "@/assets/mitali-portrait.jpeg";
 
 const roles = [
   "AI/ML Engineer",
@@ -65,8 +65,7 @@ export function Hero() {
             <span className="cursor-blink font-mono text-brand-cyan">{typed}</span>
           </p>
           <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-            Building intelligent solutions with AI, Machine Learning, and Modern Web
-            Technologies.
+Building intelligent solutions for agriculture, sustainability, and real-world impact.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -77,12 +76,14 @@ export function Hero() {
               <FolderGit2 size={16} /> View Projects
             </a>
             <a
-              href="/resume.txt"
-              download
-              className="inline-flex items-center gap-2 rounded-xl glass-strong px-5 py-3 text-sm font-semibold hover-lift"
-            >
-              <Download size={16} /> Download Resume
-            </a>
+  href="https://drive.google.com/file/d/1qGd6DBTZPjy-cheSDKLhtQFEnXS8vuG5/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 rounded-xl glass-strong px-5 py-3 text-sm font-semibold"
+>
+  <Download size={16} />
+  Download Resume
+</a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-muted-foreground hover:text-foreground"
@@ -94,7 +95,7 @@ export function Hero() {
           <div className="mt-8 flex items-center gap-3 text-muted-foreground">
             <a
               aria-label="GitHub"
-              href="https://github.com/mitalijadhav"
+              href="https://github.com/itsmitalijadhav06-beep"
               target="_blank"
               rel="noreferrer"
               className="grid h-10 w-10 place-items-center rounded-xl glass hover:text-brand-cyan hover-lift"
@@ -103,7 +104,7 @@ export function Hero() {
             </a>
             <a
               aria-label="LinkedIn"
-              href="https://linkedin.com/in/mitalijadhav"
+              href="https://www.linkedin.com/in/mitali-jadhav-04549a331"
               target="_blank"
               rel="noreferrer"
               className="grid h-10 w-10 place-items-center rounded-xl glass hover:text-brand-cyan hover-lift"
@@ -112,7 +113,7 @@ export function Hero() {
             </a>
             <a
               aria-label="Email"
-              href="mailto:mitalijadhav@example.com"
+              href="mailto:its.mitalijadhav06@gmail.com"
               className="grid h-10 w-10 place-items-center rounded-xl glass hover:text-brand-cyan hover-lift"
             >
               <Mail size={18} />

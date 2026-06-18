@@ -4,14 +4,14 @@ import { Trophy, GitBranch, Cloud, Code2, Sparkles } from "lucide-react";
 const items = [
   {
     icon: Trophy,
-    title: "Top 30 Winner",
-    org: "Innovation Marathon 2.0",
-    year: "2025",
+    title: "Top 30 Winner among 650+ participants",
+    org: "Innovation Marathon 2.0 by VOIS & Edunet Foundation",
+    year: "2025-2026",
   },
   {
     icon: GitBranch,
-    title: "Open Source Contributor",
-    org: "GSSoC'26",
+    title: "GSSoC'26 Contributor • PRs Submitted • Multiple Issues Resolved",
+    org: "GSSoC'26 by Open Source Community",
     year: "2026",
   },
   {
@@ -24,7 +24,7 @@ const items = [
     icon: Code2,
     title: "Hackathon Participant",
     org: "SIH & Multiple National Hackathons",
-    year: "2024 – 2025",
+    year: "2024 – 2026",
   },
   {
     icon: Sparkles,

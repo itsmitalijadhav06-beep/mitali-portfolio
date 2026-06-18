@@ -47,34 +47,34 @@ export function Education() {
             <div className="min-w-0">
               <h3 className="font-display text-xl font-bold">GitHub</h3>
               <a
-                href="https://github.com/mitalijadhav"
+                href="https://github.com/itsmitalijadhav06-beep"
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm text-muted-foreground hover:text-brand-cyan"
               >
-                @mitalijadhav
+                @itsmitalijadhav06-beep
               </a>
             </div>
           </div>
           <div className="mt-6 grid grid-cols-3 gap-3 text-sm">
             <div className="glass rounded-2xl p-4 text-center">
               <Star size={16} className="mx-auto text-brand-cyan" />
-              <div className="mt-1 font-display text-xl font-bold">50+</div>
+              <div className="mt-1 font-display text-xl font-bold">5+</div>
               <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Stars</div>
             </div>
             <div className="glass rounded-2xl p-4 text-center">
               <GitFork size={16} className="mx-auto text-brand-cyan" />
-              <div className="mt-1 font-display text-xl font-bold">15+</div>
+              <div className="mt-1 font-display text-xl font-bold">5+</div>
               <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Forks</div>
             </div>
             <div className="glass rounded-2xl p-4 text-center">
               <Github size={16} className="mx-auto text-brand-cyan" />
-              <div className="mt-1 font-display text-xl font-bold">20+</div>
+              <div className="mt-1 font-display text-xl font-bold">10+</div>
               <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Repos</div>
             </div>
           </div>
           <a
-            href="https://github.com/mitalijadhav"
+            href="https://github.com/itsmitalijadhav06-beep"
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-purple px-4 py-2 text-sm font-medium text-background"

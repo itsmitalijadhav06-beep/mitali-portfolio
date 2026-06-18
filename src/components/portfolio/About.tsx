@@ -15,7 +15,7 @@ export function About() {
       eyebrow="About Me"
       title={
         <>
-          Crafting <span className="gradient-text">intelligent</span> products with purpose.
+          Engineering <span className="gradient-text">Solutions</span> with AI, Data, and Modern Web Technologies.
         </>
       }
     >

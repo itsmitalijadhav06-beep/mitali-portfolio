@@ -11,7 +11,7 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-2 text-muted-foreground">
           <a
-            href="https://github.com/mitalijadhav"
+            href="https://github.com/itsmitalijadhav06-beep"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -20,7 +20,7 @@ export function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://linkedin.com/in/mitalijadhav"
+            href="https://www.linkedin.com/in/mitali-jadhav-04549a331"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -29,7 +29,7 @@ export function Footer() {
             <Linkedin size={16} />
           </a>
           <a
-            href="mailto:mitalijadhav@example.com"
+            href="mailto:its.mitalijadhav06@gmail.com"
             aria-label="Email"
             className="grid h-9 w-9 place-items-center rounded-lg glass hover:text-brand-cyan"
           >
