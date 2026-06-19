@@ -133,7 +133,9 @@ Building intelligent solutions for agriculture, sustainability, and real-world i
               className="aspect-square w-full rounded-[1.5rem] object-cover"
             />
             <div className="absolute -bottom-4 -right-4 rounded-2xl glass-strong px-4 py-3 text-xs">
-              <div className="font-mono text-brand-cyan">{`<dev/>`}</div>
+              <div className="font-mono text-cyan-950 font-bold">
+  {"<dev/>"}
+</div>
               <div className="font-semibold">Open to Work</div>
             </div>
           </div>
