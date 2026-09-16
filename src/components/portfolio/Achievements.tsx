@@ -1,12 +1,18 @@
 import { Section } from "./Section";
-import { Trophy, GitBranch, Cloud, Code2, Sparkles } from "lucide-react";
+import { Trophy, GitBranch, Cloud, Code2, Sparkles, Award } from "lucide-react";
 
 const items = [
   {
     icon: Trophy,
-    title: "Top 30 Winner among 650+ participants",
+    title: "Top 30 Finalist (650+ teams) — Prize Awarded",
     org: "Innovation Marathon 2.0 by VOIS & Edunet Foundation",
     year: "2025-2026",
+  },
+  {
+    icon: Award,
+    title: "Qualified for National Selection Assessment (31,000 of 134,000+ registrations)",
+    org: "Amazon ML Summer School 2026",
+    year: "2026",
   },
   {
     icon: GitBranch,
@@ -21,16 +27,16 @@ const items = [
     year: "2025",
   },
   {
+    icon: Sparkles,
+    title: "Top 30 Candidates Shortlisted",
+    org: "E-Yantra Lab, IIT Bombay",
+    year: "2025-2026",
+  },
+  {
     icon: Code2,
     title: "Hackathon Participant",
     org: "SIH & Multiple National Hackathons",
     year: "2024 – 2026",
-  },
-  {
-    icon: Sparkles,
-    title: "Selected for AI & Tech Programs",
-    org: "Various national initiatives",
-    year: "Ongoing",
   },
 ];
 

@@ -30,7 +30,7 @@ export function Education() {
             </div>
             <div className="glass rounded-2xl p-4">
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">CGPA</dt>
-              <dd className="mt-1 font-display text-2xl font-bold gradient-text">8.3</dd>
+              <dd className="mt-1 font-display text-2xl font-bold gradient-text">8.5</dd>
             </div>
           </dl>
           <p className="mt-5 text-sm text-muted-foreground">

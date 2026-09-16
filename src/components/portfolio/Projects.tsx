@@ -37,9 +37,36 @@ const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Voice-Enabled RAG Pipeline",
+    description:
+      "High-performance voice-to-answer Retrieval-Augmented Generation system, built for the Hacker House Goa 2026 shortlisting task. Pluggable speech-to-text, four chunking strategies over the AI4Bharat MS MARCO-XI dataset, FAISS retrieval, and groundedness guardrails.",
+    features: [
+      "Pluggable STT (Sarvam AI / ElevenLabs)",
+      "Fixed, sentence-aware, semantic & metadata-aware chunking",
+      "FAISS vector retrieval",
+      "Measured latency: P50 5.85ms / P70 6.07ms / P100 12.75ms",
+      "Groundedness & safety guardrails",
+    ],
+    tech: ["Python", "FastAPI", "FAISS", "Sentence Transformers"],
+    category: "AI/ML",
+    accent: "from-brand-cyan/30 to-brand-blue/30",
+    github: "https://github.com/itsmitalijadhav06-beep/rag-voice-pipeline",
+    demo: "https://rag-voice-pipeline-one.vercel.app",
+    status: "Deployed",
+  },
+  {
+    title: "AI Resume Ranker",
+    description:
+      "Semantic candidate-to-job matching system built for the Redrob India Runs Data & AI Challenge. Combines rule-based scoring, Sentence-Transformer semantic similarity, and behavioral signals to produce explainable, ranked candidate shortlists.",
+    tech: ["Python", "Sentence Transformers", "NumPy"],
+    category: "AI/ML",
+    accent: "from-brand-purple/30 to-emerald-400/30",
+    github: "https://github.com/itsmitalijadhav06-beep/redrob-ai-resume-ranker",
+  },
+  {
     title: "Smart Energy Monitoring System",
     description:
-      "System for monitoring and analyzing energy consumption to improve efficiency and reduce wastage across homes and facilities.",
+      "Collaborative team project for monitoring and analyzing energy consumption to improve efficiency and reduce wastage across homes and facilities, using HashMap and Max Heap-based tracking.",
     tech: ["Java", "Data Structures"],
     category: "Systems",
     accent: "from-amber-400/30 to-brand-purple/30",
@@ -96,11 +123,10 @@ export function Projects() {
           <button
             key={f}
             onClick={() => setActive(f)}
-            className={`rounded-full px-4 py-1.5 text-sm transition-all ${
-              active === f
+            className={`rounded-full px-4 py-1.5 text-sm transition-all ${active === f
                 ? "bg-gradient-to-r from-brand-blue to-brand-purple text-background"
                 : "glass text-muted-foreground hover:text-foreground"
-            }`}
+              }`}
           >
             {f}
           </button>
@@ -111,9 +137,8 @@ export function Projects() {
         {visible.map((p) => (
           <article
             key={p.title}
-            className={`group relative overflow-hidden rounded-3xl glass-strong p-6 hover-lift ${
-              p.featured ? "md:col-span-2" : ""
-            }`}
+            className={`group relative overflow-hidden rounded-3xl glass-strong p-6 hover-lift ${p.featured ? "md:col-span-2" : ""
+              }`}
           >
             <div
               className={`absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br ${p.accent} blur-3xl opacity-60 transition-opacity group-hover:opacity-100`}
